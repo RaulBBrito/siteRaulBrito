@@ -22,6 +22,8 @@
 /** The name of the database for WordPress */
 define( 'DB_NAME', 'u441287749_WrFTJ' );
 
+define( 'WP_DEBUG' true);
+
 /** MySQL database username */
 define( 'DB_USER', 'u441287749_xBuzg' );
 
