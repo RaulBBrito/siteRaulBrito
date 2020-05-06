@@ -1,0 +1,1 @@
+<?php /* pivot */ die(); ?>a:9:{s:6:"pivotx";s:2:"e1";s:5:"pivot";s:2:"e1";s:10:"pivotx.net";s:2:"e1";s:4:"part";s:2:"e1";s:4:"page";s:2:"e1";s:5:"pages";s:2:"e1";s:6:"people";s:2:"e2";s:4:"post";s:2:"e2";s:9:"published";s:2:"e2";}

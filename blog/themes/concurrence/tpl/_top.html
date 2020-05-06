@@ -1,0 +1,13 @@
+<div id="header">
+	{{tpl:SimpleMenu id="menu"}}
+</div>
+<!-- end #header -->
+<div id="logo">
+	<h1><a href="{{tpl:BlogPublicURL}}">{{tpl:BlogName}}</a></h1>
+	<p><em>{{tpl:BlogDescription cut_string="180" encode_html="1"}}</em></p>
+</div>
+<hr />
+<!-- end #logo -->
+
+<!-- # --BEHAVIOR-- publicTopAfterContent -->
+{{tpl:SysBehavior behavior="publicTopAfterContent"}}

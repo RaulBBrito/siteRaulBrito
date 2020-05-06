@@ -1,0 +1,50 @@
+<tpl:CommentsHeader>
+<div id="comments">
+    <ul class="list-unstyled">
+</tpl:CommentsHeader>
+
+		<li id="c{{tpl:CommentID}}" class="row comment-post {{tpl:CommentIfMe}} {{tpl:CommentIfOdd}} {{tpl:CommentIfFirst}} clearfix">
+		
+			<div class="comment-user-infos hidden-xs col-sm-2 col-md-2 col-lg-2">
+				<div class="center-block text-center">
+					<img src="http://www.gravatar.com/avatar/{{tpl:CommentAuthorMailMD5}}?s=58" class="img-thumbnail img-responsive" alt="{{tpl:CommentAuthor}}" title="{{tpl:CommentAuthor}}" />
+				</div>
+			</div> <!-- # END .comment-user-infos -->
+			
+			<div class="comment-message col-xs-12 col-sm-10 col-md-10 col-lg-10">
+				<!--p class="clearfix">
+					<span class="pull-right">
+						<a href="#c{{tpl:CommentID}}" class="label label-default">#{{tpl:CommentOrderNumber}}</a>
+					</span>
+				</p-->
+				
+				<div class="comment-content panel panel-default clearfix">
+					<p class="comment-content-header panel-heading clearfix">
+						<small>
+							<b class="text-muted">{{tpl:CommentAuthorLink}}</b> {{tpl:CommentDate}}, {{tpl:CommentTime}} <a href="#c{{tpl:CommentID}}" class="badge pull-right">{{tpl:CommentOrderNumber}}</a>
+						</small>
+					</p>
+					
+					<!-- # --BEHAVIOR-- publicCommentBeforeContent -->
+					{{tpl:SysBehavior behavior="publicCommentBeforeContent"}}
+				
+						{{tpl:CommentContent}}
+					
+					<!-- # --BEHAVIOR-- publicCommentAfterContent-->
+					{{tpl:SysBehavior behavior="publicCommentAfterContent"}}
+				</div>
+			</div> <!-- # END .comment-message -->
+			
+		</li>
+	  
+<tpl:CommentsFooter>
+      </ul>
+	  
+	  <tpl:EntryIf operator="or" comments_active="1" pings_active="1">
+	  <p id="comments-feed" class="clearfix">
+		<a class="btn btn-default btn-block" href="{{tpl:BlogFeedURL type="atom"}}/comments/{{tpl:EntryID}}" title="{{tpl:lang This post's comments Atom feed}}"><i class="fa fa-rss"></i> {{tpl:lang This post's comments feed}}</a>
+	  </p>
+	  </tpl:EntryIf>
+	  
+</div>
+</tpl:CommentsFooter>

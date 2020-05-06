@@ -1,0 +1,62 @@
+<article id="p{{tpl:EntryID}}" class="post {{tpl:EntryIfOdd}} {{tpl:EntryIfFirst}} row" lang="{{tpl:EntryLang}}" xml:lang="{{tpl:EntryLang}}">
+	
+	<div class="hidden-xs hidden-sm col-md-4 col-lg-3">
+		<ul class="meta-search">
+			<li><i class="fa fa-calendar"></i> <span>{{tpl:EntryDate format="%d-%m-%Y"}}</span></li>
+			<li><i class="fa fa-clock-o"></i> <span>{{tpl:EntryTime}}</span></li>
+			<li><i class="fa fa-user"></i> <span>{{tpl:EntryAuthorCommonName}}</span></li>
+			<li><i class="fa fa-folder"></i> <span><a href="{{tpl:EntryCategoryURL}}">{{tpl:EntryCategory encode_html="1"}}</a></span></li>
+		</ul>
+	</div>
+	
+	<div class="col-xs-12 col-sm-12 col-md-8 col-lg-9">
+		<h3 class="post-title">
+			<a href="{{tpl:EntryURL}}" title="{{tpl:EntryTitle encode_html="1"}}">{{tpl:EntryTitle encode_html="1"}}</a>
+		</h3>
+		
+		<!-- # --BEHAVIOR-- publicEntryBeforeContent -->
+		{{tpl:SysBehavior behavior="publicEntryBeforeContent"}}
+		
+		<tpl:EntryIf extended="1">
+		<div class="post-content">
+			<a href="{{tpl:EntryURL}}" title="{{tpl:EntryTitle encode_html="1"}}" class="hidden-xs pull-left">
+				{{tpl:EntryFirstImage class="img-thumbnail img-responsive" with_category="1" size="t"}}
+			</a>
+			{{tpl:EntryExcerpt cut_string="200" remove_html="1"}}
+		</div>
+		</tpl:EntryIf>
+		
+		<tpl:EntryIf extended="0">
+		<div class="post-content">
+			<a href="{{tpl:EntryURL}}" title="{{tpl:EntryTitle encode_html="1"}}" class="hidden-xs pull-left">
+				{{tpl:EntryFirstImage class="img-thumbnail img-responsive" with_category="1" size="t"}}
+			</a>
+			{{tpl:EntryContent cut_string="200" remove_html="1"}}
+		</div>
+		</tpl:EntryIf>
+		
+		<!-- # --BEHAVIOR-- publicEntryAfterContent -->
+		{{tpl:SysBehavior behavior="publicEntryAfterContent"}}
+	</div>
+</article>
+	
+<!-- # Number of comments, trackbacks and attachments -->
+<tpl:EntryIf operator="or" show_comments="1" show_pings="1" has_attachment="1">
+<p class="post-info-co row" style="margin-top: 1.6em;">
+</tpl:EntryIf>
+
+	<tpl:EntryIf show_comments="1">
+      <a href="{{tpl:EntryURL}}#comments" class="comment_count">{{tpl:EntryCommentCount}}</a>
+    </tpl:EntryIf>
+    <tpl:EntryIf show_pings="1">
+      <a href="{{tpl:EntryURL}}#pings" class="ping_count">{{tpl:EntryPingCount}}</a></tpl:EntryIf>
+    <tpl:EntryIf has_attachment="1">
+      <a href="{{tpl:EntryURL}}#attachments" class="attach_count">{{tpl:EntryAttachmentCount}}</a></tpl:EntryIf>
+	  
+<tpl:EntryIf operator="or" show_comments="1" show_pings="1" has_attachment="1">
+</p>
+</tpl:EntryIf>
+
+<tpl:EntryIf operator="and" show_comments="0" show_pings="0" has_attachment="0">
+<hr class="clearfix" />
+</tpl:EntryIf>

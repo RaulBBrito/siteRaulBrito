@@ -1,0 +1,1 @@
+<?php /* pivot */ die(); ?>a:2:{i:1;s:22:"welcome-to-pivotx-2311";i:2;s:16:"example-linkdump";}

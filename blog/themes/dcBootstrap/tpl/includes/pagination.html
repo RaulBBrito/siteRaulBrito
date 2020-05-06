@@ -1,0 +1,25 @@
+<tpl:Pagination>
+	<div class="center-block text-center clearfix">
+		<ul class="pagination">
+		
+		<tpl:PaginationIf start="0">
+			<li><a href="{{tpl:PaginationURL offset="-1"}}"><i class="fa fa-angle-double-left"></i></a></li>
+		</tpl:PaginationIf>
+		
+		<tpl:PaginationIf start="1">
+			<li class="disabled"><a><i class="fa fa-angle-double-left"></i></a></li>
+		</tpl:PaginationIf>
+		
+		{{tpl:PaginationLinks max="5"}}
+		
+		<tpl:PaginationIf end="0">
+			<li><a href="{{tpl:PaginationURL offset="+1"}}"><i class="fa fa-angle-double-right"></i></a></li>
+		</tpl:PaginationIf>
+		
+		<tpl:PaginationIf end="1">
+			<li class="disabled"><a><i class="fa fa-angle-double-right"></i></a></li>
+		</tpl:PaginationIf>
+		
+		</ul>
+	</div>
+</tpl:Pagination>

@@ -1,0 +1,23 @@
+<tpl:Attachments>
+    <tpl:AttachmentsHeader>
+      <div class="panel panel-default attachments clearfix" id="attachments">
+      <div class="panel-heading"><h3 class="panel-title"><i class="fa fa-paperclip"></i> {{tpl:lang Attachments}}</h3></div>
+	  
+	  <div class="panel-body">	  
+	  <div class="list-group clearfix" style="margin-bottom: 0;">
+    </tpl:AttachmentsHeader>
+		
+		<a href="{{tpl:AttachmentURL}}" class="list-group-item" title="{{tpl:AttachmentFileName}} ({{tpl:AttachmentSize}})">
+			<tpl:AttachmentIf is_image="1"><i class="fa fa-picture-o margin-right"></i></tpl:AttachmentIf>
+			<tpl:AttachmentIf is_mp3="1"><i class="fa fa-music margin-right"></i></tpl:AttachmentIf>
+			<tpl:AttachmentIf is_flv="1"><i class="fa fa-film margin-right"></i></tpl:AttachmentIf>
+			<tpl:AttachmentIf is_image="0" is_mp3="0" is_flv="0" operator="and"><i class="fa fa-file"></i></tpl:AttachmentIf>
+			<span class="badge pull-right">{{tpl:AttachmentType}}</span> {{tpl:AttachmentTitle cut_string="80"}}
+		</a>	  
+	  
+    <tpl:AttachmentsFooter>
+      </div>
+	  </div>
+	  </div>
+    </tpl:AttachmentsFooter>
+</tpl:Attachments>

@@ -1,0 +1,40 @@
+<div id="extra-header" class="clearfix">{{tpl:BlogDescription encode_html="1"}}</div>
+
+<div id="top">
+  
+  <div class="container clearfix">
+    <div class="row">
+      
+    <h1 class="hidden-xs col-sm-3 col-md-3 col-lg-3 pull-left"><span><a href="{{tpl:BlogURL}}" title="{{tpl:BlogName encode_html="1"}}">{{tpl:BlogName encode_html="1"}}</a></span></h1>
+    
+    <nav class="col-xs-12 col-sm-9 col-md-9 col-lg-9 pull-right navbar navbar-default" role="navigation">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">{{tpl:lang Menu}}</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand visible-xs" href="{{tpl:BlogURL}}">{{tpl:BlogName encode_html="1"}}</a>
+      </div>
+      
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        {{tpl:SimpleMenu id="" class="nav navbar-nav"}}
+      </div>
+    </nav>
+    
+    <!-- # --BEHAVIOR-- publicTopAfterContent -->
+    {{tpl:SysBehavior behavior="publicTopAfterContent"}}
+      
+    </div>      
+  </div>
+    
+</div>
+
+<p id="prelude">
+  <a href="#main">{{tpl:lang To content}}</a> |
+  <a href="#blognav">{{tpl:lang To menu}}</a> |
+  <a href="#search">{{tpl:lang To search}}</a>
+</p>

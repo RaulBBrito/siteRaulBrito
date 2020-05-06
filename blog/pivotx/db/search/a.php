@@ -1,0 +1,1 @@
+<?php /* pivot */ die(); ?>a:5:{s:3:"and";s:5:"e1|e2";s:3:"all";s:2:"e1";s:6:"appear";s:2:"e1";s:14:"administration";s:2:"e1";s:13:"automagically";s:2:"e2";}

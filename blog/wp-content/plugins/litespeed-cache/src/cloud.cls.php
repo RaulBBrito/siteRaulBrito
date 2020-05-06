@@ -305,7 +305,7 @@ class Cloud extends Base
 
 		// Check if the stored server needs to be refreshed
 		if ( ! $force ) {
-			if ( ! empty( $this->_summary[ 'server.' . $service ] ) && ! empty( $this->_summary[ 'server_date.' . $service ] ) && $this->_summary[ 'server_date.' . $service ] < time() + 86400 * self::EXPIRATION_NODE ) {
+			if ( ! empty( $this->_summary[ 'server.' . $service ] ) && ! empty( $this->_summary[ 'server_date.' . $service ] ) && $this->_summary[ 'server_date.' . $service ] > time() - 86400 * self::EXPIRATION_NODE ) {
 				return $this->_summary[ 'server.' . $service ];
 			}
 		}
@@ -769,8 +769,10 @@ class Cloud extends Base
 			'site_url'	=> home_url(),
 			'rest'		=> rest_get_url_prefix(),
 			'server_ip'	=> Conf::val( Base::O_SERVER_IP ),
-			'token'		=> $this->_summary[ 'token' ],
 		);
+		if ( ! empty( $this->_summary[ 'token' ] ) ) {
+			$data[ 'token' ] = $this->_summary[ 'token' ];
+		}
 
 		$response = wp_remote_get( self::CLOUD_SERVER . '/d/req_key?data=' . Utility::arr2str( $data ) );
 		if ( is_wp_error( $response ) ) {

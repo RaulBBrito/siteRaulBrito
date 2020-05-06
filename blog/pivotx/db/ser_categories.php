@@ -1,0 +1,1 @@
+<?php /* pivot */ die(); ?>a:2:{i:0;a:5:{s:4:"name";s:7:"default";s:7:"display";s:7:"Default";s:5:"users";a:1:{i:0;s:10:"raulbbrito";}s:5:"order";s:3:"100";s:6:"hidden";i:-1;}i:1;a:5:{s:4:"name";s:8:"linkdump";s:7:"display";s:8:"Linkdump";s:5:"users";a:1:{i:0;s:10:"raulbbrito";}s:5:"order";s:3:"101";s:6:"hidden";i:-1;}}

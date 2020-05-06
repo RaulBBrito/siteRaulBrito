@@ -1,0 +1,399 @@
+/*
+# -- BEGIN LICENSE BLOCK ----------------------------------
+# This file is part of Boston, a theme for Dotclear.
+#
+# Copyright (c) 2009-2016
+# annso contact@as-i-am.fr
+#
+# Licensed under the GPL version 2.0 license.
+# A copy of this license is available in LICENSE file or at
+# http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+# -- END LICENSE BLOCK ------------------------------------
+*/
+
+/* -----------------------------------------------------------------
+	1. STRUCTURE
+------------------------------------------------------------------ */
+@import url(layout.css);
+/* ------------------------------------------------------------
+	2. BALISES HTML PAR DEFAUT
+------------------------------------------------------------- */
+
+body {
+	background: #DFDFDF;
+	color: #6B6F61;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 75%;
+}
+
+h2 {
+	font-family: 'Georgia', Arial, Sans-serif;
+	font-size: 2em;
+	font-style: italic;
+	font-weight: normal;
+}
+h3 {
+	font-family: 'Georgia', Arial, Sans-serif;
+	font-size: 1.7em;
+	font-style: italic;
+	font-weight: normal;
+}
+
+fieldset { border: none;}
+
+a {
+	color: #000;
+	text-decoration: none;
+	}
+a:hover { text-decoration: underline; }
+
+a img { border: none; }
+
+code, pre {
+	white-space: normal;
+	width: 100%;
+}
+/* ------------------------------------------------------------
+	3. PAGE
+------------------------------------------------------------- */
+
+#page {
+	background: #fff;
+}
+/* ------------------------------------------------------------
+	4. HAUT DE PAGE
+------------------------------------------------------------- */
+
+#top {height:20px;}
+#prelude { top:-50px; position:fixed; }
+/* ------------------------------------------------------------
+	5. WRAPPER MAIN CONTENT
+------------------------------------------------------------- */
+
+.pagination {
+	padding: 40px 0 20px 0;
+	text-align: center;
+}
+#navlinks { text-align: center;}
+.pagination a, #navlinks a{ color: #BCBFB3; }
+.pagination a:hover, #navlinks a:hover{
+	color: #6B6F61;
+	text-decoration: none;
+}
+#breadcrumb {margin:0;padding:10px 0 0 10px;width:530px;}
+/* ------------------------------------------------------------
+	6. BILLETS
+------------------------------------------------------------- */
+
+.post {
+	text-align:justify;
+	width:521px;
+}
+
+.day-date {
+	float: left;
+	width: 35px;
+	margin: -5px 0 0 -64px;
+	padding: 0 4px 8px;
+	color: #fff;
+	background: #7E858D;
+	text-align:center;
+}
+.day-date span { text-align: center;}
+.date-day {
+	display: block;
+	font-family: Georgia;
+	font-size: 2.6em;
+	letter-spacing: -5px;
+	}
+.date-month {
+	padding-left: 10px;
+	font-family: Georgia;
+	font-size: 1em;
+	font-style: italic;
+}
+.date-year { display: none;}
+
+.post-title {
+	color: #000;
+	font-family: "Times New Roman";
+	font-style: italic;
+	font-size: 2.3em;
+}
+.post-title:first-letter {
+	font-style: normal;
+}
+.post-info, .page-info { display: none; }
+.post-tags { display: none;}
+
+.post-info-co {
+	padding: 5px 0;
+	border-top: 1px solid #DFDFDF;
+	border-bottom: 1px solid #DFDFDF;
+	color: #DFDFDF;
+	text-align: right;
+}
+a.comment_count, a.ping_count, a.attach_count {
+	color: #BCBFB3;
+	font-family: 'Georgia',Arial,Sans-serif;
+	font-size: 1.4em;
+	font-style: italic;
+	font-weight: bold;
+}
+a.comment_count:hover, a.ping_count:hover, a.attach_count:hover {
+	color: #6B6F61;
+	text-decoration: none;
+}
+/* ------------------------------------------------------------
+	7. COMMENTAIRES, PINGS
+------------------------------------------------------------- */
+
+#comments h3, #pings h3 { padding: 10px 0; }
+
+#comments dt, #pings dt {
+	margin-top: 20px;
+	font-style: italic;
+}
+#comments dd, #pings dd {
+	margin: 0;
+	padding: 20px;
+	background:#EFEFEF;
+}
+#comments dd p, #pings dd p { margin: 0 0 10px 0;}
+#comments dd.me {
+	background: #DFDFDF;
+}
+#comments a, #pings a {
+	color: #6B6F61;
+	text-decoration: none;
+}
+#comments .commentAuthor {
+	color: #6B6F61;
+	font-family: 'Georgia',Arial,Sans-serif;
+	font-size: 1.2em;
+	font-style: italic;
+	font-weight: bold;
+}
+#comments a.comment-number, #pings a.ping-number {
+	display: inline-table;
+	width: 15px;
+	padding: 2px 4px;
+	color: #6B6F61;
+	background: #EFEFEF;
+	text-align: center;
+}
+#comments .me a.comment-number {
+	color: #FFFFFF;
+	background: #DFDFDF;
+}
+
+#comments a span.at_reply_title{
+	color: #6B6F61;
+}
+
+.field label {
+	float: left;
+	width: 30%;
+	padding-right: 20px;
+	text-align: right;
+}
+.field input { width:55%; }
+.field textarea {
+	width: 421px;
+}
+#comment-form .jstSpacer {display:none;}
+#comment-form .jstEditor textarea {
+  width: 65%;
+	border: 1px solid #ddd;
+	margin-left:168px;
+}
+#comment-form .jstEditor textarea:hover {
+  border: 1px solid #E8E8CE;
+}
+#comment-form .jstHandle {margin-left:168px;}
+#comments-feed { margin-left:10px;}
+/* ------------------------------------------------------------
+	8. SIDEBAR
+------------------------------------------------------------- */
+
+#blognav {
+	font-size: 0.9em;
+	text-align: right;
+}
+#blogextra {
+	font-size: 0.9em;
+	text-align: left;
+	padding: 0 10px 0 6px;
+ 	width: 170px;
+}
+
+#sidebar h2 {
+	padding: 2px 5px;
+	color: #6B6F61;
+	background: #DFDFDF;
+	border-top: 1px solid #6B6F61;
+	font-family: sans-serif;
+	font-size: 1em;
+	font-weight: normal;
+	font-style: normal;
+	text-transform: uppercase;
+}
+#sidebar img {max-width:100%;}
+#sidebar ul {
+	margin:5px 0 20px;
+	padding: 0;
+}
+#sidebar li { list-style-type:none;}
+
+#sidebar .categories li.category-current {
+	font-weight: bold;
+}
+#sidebar .categories li.category-current li {
+	font-weight: normal;
+}
+#sidebar a { color: #6B6F61;}
+#sidebar a:hover {
+	color: #6B6F61;
+	text-decoration: underline;
+}
+
+#sidebar .lastcomments a { color: #BCBFB3; }
+#sidebar .lastcomments a:hover {
+	color: #6B6F61;
+	text-decoration: none;
+}
+.lastcomments .author {
+	color: #6B6F61;
+	font-weight: bold;
+}
+.lastcomments .title {
+	color: #6B6F61;
+	font-style: italic;
+}
+
+.tags {
+	text-align: justify;
+}
+/* ------------------------------------------------------------
+	9. FOOTER
+------------------------------------------------------------- */
+
+#footer {
+	height: 100px;
+	padding: 0 40px 10px 30px;
+	text-align: right;
+	border-top:1px dotted #DFDFDF;
+}
+#footer a { color: #6B6F61; }
+#footer .texte {
+	padding-top: 30px;
+}
+
+#footer a.site {
+	font-family: 'Georgia',Arial,Sans-serif;
+	font-size: 1.4em;
+	font-style: italic;
+	font-weight: bold;
+}
+/* ------------------------------------------------------------
+	10. CLASSES COMMUNES
+------------------------------------------------------------- */
+
+.feed {
+	padding-left:16px;
+	background : transparent url(img/rss.jpg) no-repeat left center;
+}
+
+.dc-tags #content ul li, .dc-tags #content ul li a,
+.tags ul li, .tags ul li a {
+	display : inline;
+	width : auto;
+	padding-left : 0;
+	padding-right : 4px;
+	background : transparent;
+	line-height : 1.5em;
+}
+.tags ul li a:hover {
+	background-image :none;
+}
+#sidebar .tags a.tag0  { font-size: 90%; color: #DFDFDF; }
+#sidebar .tags a.tag10 { font-size: 100%; color: #B8BFA7; }
+#sidebar .tags a.tag20 { font-size: 105%; color: #6B6F61; }
+#sidebar .tags a.tag30 { font-size: 110%; color: #6B6F61;}
+#sidebar .tags a.tag40 { font-size: 115%; }
+#sidebar .tags a.tag50 { font-size: 120%; }
+#sidebar .tags a.tag60 { font-size: 125%; }
+#sidebar .tags a.tag70 { font-size: 130%; font-style: italic; font-family: 'Georgia',Arial,Sans-serif; }
+#sidebar .tags a.tag80 { font-size: 135%; font-style: italic; font-family: 'Georgia',Arial,Sans-serif; }
+#sidebar .tags a.tag90 { font-size: 140%; font-style: italic; font-weight: bold; font-family: 'Georgia',Arial,Sans-serif;}
+#sidebar .tags a.tag100 { font-size: 145%; font-style: italic; font-weight: bold; font-family: 'Georgia',Arial,Sans-serif;}
+
+/* messages d'erreur */
+.error {
+	padding: 0.5em;
+	color: #fff;
+	background: #6B6F61;
+	font-size: 1.3em;
+	font-style: italic;
+	font-weight: bold;
+	}
+.error ul {
+	padding-left : 20px;
+	}
+.error li {
+	list-style : square;
+	}
+
+.left { float: left; margin-right : 1em; }
+.right { float: right; margin-left : 1em; }
+.center { margin-left : auto; margin-right : auto; }
+.left-text { text-align : left; }
+.right-text { text-align : right; }
+.center-text { text-align : center; }
+.little-text { font-size : .8em;}
+.little-upper-text { font-size : .8em; text-transform : uppercase; }
+
+/* ------------------------------------------------------------
+	11. PAGES SPECIFIQUES
+------------------------------------------------------------- */
+
+.dc-archive .content-inner .month {
+	float: left;
+	width: 24%;
+}
+.dc-archive .content-inner ul { padding: 0; }
+.dc-archive .content-inner li { list-style-type: none; }
+.dc-archive-month .post-title { padding-bottom: 20px;}
+.dc-tags a { color: #6B6F61; }
+.dc-tags a:hover { color: #000; }
+
+#subcategories {
+	padding: 5px 0 20px 0;
+}
+#subcategories h3 {
+	margin: 0;
+}
+#subcategories ul {
+	margin: 0.5em 0 0 0;
+	padding: 0 0 0 20px;
+	line-height: 1.4;
+}
+
+/* ---------------------------------------------------
+  12. ET POUR FINIR NE PAS OUBLIER LES CLEARERS
+--------------------------------------------------- */
+.post, .post-content, .footnotes, .attachments,
+.post-info-co, #comments, #footer {
+  clear:both;
+}
+
+/* en sus */
+#content-info img {
+  max-width:100%;
+}
+.post-excerpt img, .post-content img {
+  max-width:100%;
+}
+.post embed, .post iframe {max-width:100%;}
+
+.dc-contactme .field textarea {width:auto;}

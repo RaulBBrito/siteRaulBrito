@@ -1,0 +1,99 @@
+<tpl:SysIf current_mode="!default">
+<div class="visible-lg container clearfix">
+  <div class="row">
+    <div class="btn-group btn-block btn-breadcrumb">
+  	<a href="{{tpl:BlogURL}}" class="btn btn-primary"><i class="fa fa-home"></i></a>
+</tpl:SysIf>
+    
+	<tpl:SysIf current_mode="404">
+    <a class="btn btn-default disabled">{{tpl:lang Document not found}}</a>
+    </tpl:SysIf>
+	
+	<tpl:SysIf current_mode="activity">
+    <a class="btn btn-default disabled">{{tpl:lang Activity}} &rsaquo; {{tpl:UserCommonName}}</a>
+    </tpl:SysIf>
+	
+    <tpl:SysIf current_mode="archive">
+    <a href="{{tpl:BlogArchiveURL}}" class="btn <tpl:SysIf current_tpl="archive_month.html">btn-info</tpl:SysIf>">{{tpl:lang Archives}}</a>
+    </tpl:SysIf>
+      
+    <tpl:SysIf current_tpl="archive_month.html">
+      <a href="{{tpl:ArchiveURL}}" class="btn">{{tpl:ArchiveDate}}</a>
+    </tpl:SysIf>
+      
+    <tpl:SysIf current_mode="category">
+    <a href="{{tpl:CategoryURL}}" class="btn btn-info">{{tpl:CategoryTitle encode_html="1"}}</a>
+    <a class="btn btn-default disabled">{{tpl:CategoryDescription encode_html="1" remove_html="1" cut_string="128"}}</a>
+    </tpl:SysIf>
+      
+    <tpl:SysIf current_mode="contactme">
+    <a class="btn btn-default disabled">{{tpl:ContactMePageTitle encode_html="1"}}</a>
+    </tpl:SysIf>
+	
+	<tpl:SysIf current_mode="default-page">
+	<a class="btn btn-default disabled">{{tpl:lang page}} {{tpl:PaginationCurrent}}</a>
+    </tpl:SysIf>
+	
+	<tpl:SysIf current_mode="files">
+    <a class="btn btn-default disabled">{{tpl:lang Media manager}}</a>
+    </tpl:SysIf>
+	
+	<tpl:SysIf current_mode="login">
+    <a class="btn btn-default disabled">{{tpl:lang Login}}</a>
+    </tpl:SysIf>
+	
+	<tpl:SysIf current_mode="mailto">
+    <a class="btn btn-default disabled">{{tpl:lang Send an email}}</a>
+    </tpl:SysIf>
+	
+	<tpl:SysIf current_mode="new">
+    <a class="btn btn-default disabled">{{tpl:lang New entry}}</a>
+    </tpl:SysIf>
+    
+    <tpl:SysIf current_mode="pages">
+    <a href="{{tpl:EntryURL}}" class="btn">{{tpl:EntryTitle encode_html="1"}}</a>
+    </tpl:SysIf>
+	
+	<tpl:SysIf current_mode="people">
+    <a class="btn btn-default disabled">{{tpl:lang Userlist}}</a>
+    </tpl:SysIf>
+	
+	<tpl:SysIf current_mode="post">
+    <tpl:EntryIf has_category="1"><a href="{{tpl:EntryCategoryURL}}" class="btn btn-info">{{tpl:EntryCategory}}</a></tpl:EntryIf>
+    <a href="{{tpl:EntryURL}}" class="btn">{{tpl:EntryTitle encode_html="1"}}</a>
+    </tpl:SysIf>
+	
+	<tpl:SysIf current_mode="preferences">
+    <a class="btn btn-default disabled">{{tpl:lang My preferences}}</a>
+    </tpl:SysIf>
+  
+    <tpl:SysIf current_mode="profile">
+    <a class="btn btn-default disabled">{{tpl:UserCommonName}}</a>
+    </tpl:SysIf>
+	
+	<tpl:SysIf current_mode="register">
+    <a class="btn btn-default disabled">{{tpl:lang Register an account}}</a>
+    </tpl:SysIf>
+	
+	<tpl:SysIf current_mode="recover">
+    <a class="btn btn-default disabled">{{tpl:lang Request a new password}}</a>
+    </tpl:SysIf>
+  
+    <tpl:SysIf current_mode="search">
+      <a class="btn btn-default disabled">{{tpl:lang Search}} - {{tpl:SysSearchString encode_html="1"}}</a>
+    </tpl:SysIf>
+      
+    <tpl:SysIf current_mode="tag">
+    <a href="{{tpl:TagCloudURL}}" class="btn btn-info">{{tpl:lang Tags}}</a>
+    <a href="{{tpl:TagURL}}" class="btn">{{tpl:TagID}}</a>
+    </tpl:SysIf>
+      
+    <tpl:SysIf current_mode="tags">
+    <a href="{{tpl:TagCloudURL}}" class="btn">{{tpl:lang Tags}}</a>
+    </tpl:SysIf>
+  
+<tpl:SysIf current_mode="!default">
+    </div>
+  </div>
+</div>
+</tpl:SysIf>

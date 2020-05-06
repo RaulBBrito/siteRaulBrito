@@ -1,0 +1,1 @@
+<?php /* pivot */ die(); ?>a:1:{i:0;a:4:{s:11:"chaptername";s:5:"Pages";s:11:"description";s:44:"Add some pages here, or start a new chapter.";s:9:"sortorder";i:1;s:8:"editable";b:0;}}

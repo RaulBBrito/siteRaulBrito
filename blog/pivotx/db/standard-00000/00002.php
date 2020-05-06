@@ -1,0 +1,5 @@
+<?php /* pivot */ die(); ?>a:23:{s:4:"code";i:2;s:4:"date";s:19:"2020-05-05-14-41-01";s:12:"introduction";s:269:"
+<p>This is an entry in the linkdump category. Most people use this to 
+quickly post links to interesting sites or resources. If you write a 
+new entry, and select 'linkdump' as the category, the entry will
+automagically be published in this section of your weblog.</p>";s:4:"body";s:0:"";s:8:"category";a:1:{i:0;s:8:"linkdump";}s:12:"publish_date";s:19:"2020-05-05-14-41-01";s:9:"edit_date";s:16:"2020-05-05-14-42";s:5:"title";s:19:"Example linkdump...";s:8:"subtitle";s:0:"";s:4:"user";s:10:"raulbbrito";s:10:"convert_lb";i:5;s:6:"status";s:7:"publish";s:14:"allow_comments";i:1;s:8:"keywords";s:0:"";s:7:"vialink";s:0:"";s:8:"viatitle";s:0:"";s:8:"comments";a:0:{}s:3:"uri";s:16:"example-linkdump";s:3:"uid";i:2;s:11:"extrafields";a:0:{}s:4:"link";s:5:"/?e=2";s:7:"excerpt";s:181:"This is an entry in the linkdump category. Most people use this to quickly post links to interesting sites or resources. If you write a new entry, and select 'linkdump' as the categ";s:10:"trackbacks";a:0:{}}

@@ -1,0 +1,1 @@
+<?php /* pivot */ die(); ?>a:3:{s:3:"can";s:2:"e1";s:6:"course";s:2:"e1";s:8:"category";s:2:"e2";}

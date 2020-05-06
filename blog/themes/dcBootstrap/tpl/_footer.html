@@ -1,0 +1,30 @@
+<div id="footer" class="clearfix">
+  <div class="container">
+    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 text-muted">
+      {{tpl:SysPoweredBy}}
+      <br /> Thème <a href="http://blog.html-edition.com/billet/188" title="v2.0.5">dcBootstrap</a> {{tpl:lang by}} <a href="http://www.html-edition.com/" title="Création de sites Internet"><span class="fa fa-html5"></span> HTML Edition</a>
+    </div>
+    
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 social text-right">
+      <a href="{{tpl:BlogFeedURL}}" class="rss"><i class="fa fa-rss"></i></a>
+      <a href="#facebook" class="facebook"><i class="fa fa-facebook"></i></a>
+      <a href="#twitter" class="twitter"><i class="fa fa-twitter"></i></a>
+      <a href="#googleplus" class="google-plus"><i class="fa fa-google-plus"></i></a>
+      <a href="#contact" class="contact"><i class="fa fa-envelope"></i></a>
+    </div>
+  </div>
+</div>
+
+{{tpl:SysBehavior behavior="publicFooterContent"}}
+
+<script type="text/javascript" src="{{tpl:BlogThemeURL}}/js/jquery.scrollUp.min.js"></script>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $.scrollUp({
+      scrollText: '{{tpl:lang UP}} &uarr;', // Text for bumping the page
+      animation: 'slide',
+      activeOverlay: '#00FFFF'
+    });
+  });
+</script>
