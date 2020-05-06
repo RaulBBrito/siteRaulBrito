@@ -803,8 +803,8 @@ a:hover img {
 
 .social-navigation a:before {
 	background: #fff;
-	border: 1px solid #597D04;
-	color: #597D04;
+	border: 1px solid #000;
+	color: #000;
 	padding: 10px;
 	content: "\f415";
 	font-size: 20px;
@@ -1520,7 +1520,7 @@ img.aligncenter {
 }
 
 .widget_recent_entries .post-date {
-	display: block;
+	display: inline;
 }
 
 .widget_rss ul {
@@ -4365,7 +4365,7 @@ pre.wp-block-verse,
 		margin-right: -100%;
 		max-width: 413px;
 		position: relative;
-		width: 29.4118%;
+		width: 29%;
 	}
 
 	.secondary {
@@ -4455,7 +4455,7 @@ pre.wp-block-verse,
 	.main-navigation {
 		font-size: 12px;
 		font-size: 1.2rem;
-		margin: 0 20% 15%;
+		margin: 0 10% 5%;
 	}
 
 	.main-navigation a {
@@ -4485,7 +4485,7 @@ pre.wp-block-verse,
 	}
 
 	.social-navigation {
-		margin: 0 20% 20%;
+		margin: 0 10% 15%;
 	}
 
 	.social-navigation ul {
@@ -4609,6 +4609,8 @@ pre.wp-block-verse,
 		padding: 0 20%;
 	}
 
+
+
 	.site-branding {
 		min-height: 0;
 		padding: 0;
@@ -4635,8 +4637,8 @@ pre.wp-block-verse,
 	.widget {
 		font-size: 12px;
 		font-size: 1.2rem;
-		margin: 0 0 20%;
-		padding: 0 20%;
+		margin: 0 0 10%;
+		padding: 0 13%;
 	}
 
 	.widget blockquote {
